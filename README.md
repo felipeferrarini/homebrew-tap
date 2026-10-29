@@ -4,6 +4,7 @@ Homebrew tap for [PRPulse](https://github.com/felipeferrarini/prpulse), a menu b
 
 ```bash
 brew tap felipeferrarini/tap
+brew trust felipeferrarini/tap
 brew install --cask prpulse
 ```
 
