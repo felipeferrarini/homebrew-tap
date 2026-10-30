@@ -20,7 +20,11 @@ cask "prpulse" do
 
   caveats <<~EOS
     PRPulse is not signed with an Apple Developer ID, so macOS blocks the first launch.
-    Open it once, then go to System Settings > Privacy & Security and click "Open Anyway"
-    next to PRPulse.
+    Click OK on the warning, then go to System Settings > Privacy & Security and click
+    "Open Anyway" next to PRPulse. Or, in the terminal:
+
+      xattr -dr com.apple.quarantine /Applications/PRPulse.app
+
+    You only do this once: the automatic updates should not ask again.
   EOS
 end
