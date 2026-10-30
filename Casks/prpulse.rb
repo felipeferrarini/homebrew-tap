@@ -1,12 +1,14 @@
 cask "prpulse" do
-  version "0.2.0"
-  sha256 "4be8b672f19b78e3344931753e29960cda761f6bc715c5e787f3d9154645d171"
+  version "0.3.0"
+  sha256 "ba383d6d41930f3b03b6a703e36652b0adde88906218f5bab76b93abda8e5906"
 
   url "https://github.com/felipeferrarini/prpulse/releases/download/v#{version}/PRPulse-#{version}.dmg"
   name "PRPulse"
   desc "Menu bar app that tells you which GitHub pull requests need you"
   homepage "https://github.com/felipeferrarini/prpulse"
 
+  # The app updates itself with Sparkle, so Homebrew should not fight it.
+  auto_updates true
   depends_on macos: :sonoma
 
   app "PRPulse.app"
