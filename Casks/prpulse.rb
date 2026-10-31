@@ -1,6 +1,6 @@
 cask "prpulse" do
-  version "0.5.4"
-  sha256 "636457d40d8f77df843888c27e4d989b7fcd59d4cfe82428e183114bd59f3600"
+  version "0.6.0"
+  sha256 "05256a8aceaf44a5c176cd3ab62b515f1b762c196fb89076cb7fb0019cc6a68b"
 
   url "https://github.com/felipeferrarini/prpulse/releases/download/v#{version}/PRPulse-#{version}.dmg"
   name "PRPulse"
